@@ -21,7 +21,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           registry-url: https://npm.pkg.github.com
-          scope: bats-core
       - run: cat .npmrc
       - run: npm publish --ignore-scripts
         env:
